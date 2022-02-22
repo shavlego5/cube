@@ -1,0 +1,40 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#cube {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation: spin 60s linear infinite;
+    transition: 10s linear;
+}
+
+.cube-point {
+    width: 4px;
+    height: 4px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    transition: 1s linear;
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
